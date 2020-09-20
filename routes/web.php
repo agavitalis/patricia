@@ -14,7 +14,7 @@
  */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return response()->json(['message' => "Welcome to Paticia API"], 200);
 });
 
 // API route group
