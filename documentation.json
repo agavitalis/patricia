@@ -1,126 +1,151 @@
 {
-	"variables": [],
 	"info": {
+		"_postman_id": "ef355aa2-ecf1-4641-a1f5-facb7625e275",
 		"name": "Patricia",
-		"_postman_id": "dcd96ac3-e5d7-b1ca-eed2-38572509abdc",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Register",
 			"request": {
-				"url": "localhost:8000/api/register",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"first_name\": \"Ogbonna\",\n\t\"last_name\":\"Vitalis\",\n\t\"email\":\"agavitalisogbonnaa@gmail.com\",\n\t\"password\":\"Chidiebere_94@\",\n\t\"password_confirmation\":\"Chidiebere_94@\"\n}"
+					"raw": "{\n\t\"first_name\": \"Ogbonna\",\n\t\"last_name\":\"Vitalis\",\n\t\"email\":\"agavitalisogbonnaa@gmail.com\",\n\t\"password\":\"Vitalis123@\",\n\t\"password_confirmation\":\"Vitalis123@\"\n}"
 				},
-				"description": ""
+				"url": {
+					"raw": "localhost:8000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Login",
 			"request": {
-				"url": "localhost:8000/api/login",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\n\t\"email\":\"agavitalisogbonna@gmail.com\",\n\t\"password\":\"Chidiebere_94@\"\n}"
+					"raw": "{\n\t\n\t\"email\":\"agavitalisogbonna@gmail.com\",\n\t\"password\":\"Vitalis123@\"\n}"
 				},
-				"description": ""
+				"url": {
+					"raw": "localhost:8000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Get Logged In User Profile",
 			"request": {
-				"url": "localhost:8000/api/profile",
 				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDYzNTYzNSwiZXhwIjoxNjAwNjM5MjM1LCJuYmYiOjE2MDA2MzU2MzUsImp0aSI6ImxpT0VuOGdNb2JSbjdpYW4iLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gt0W8A5VrK5av2n8vUr6Q8pYRRIxcrSrmR4mMwutx0A",
-						"description": ""
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDYzNTYzNSwiZXhwIjoxNjAwNjM5MjM1LCJuYmYiOjE2MDA2MzU2MzUsImp0aSI6ImxpT0VuOGdNb2JSbjdpYW4iLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gt0W8A5VrK5av2n8vUr6Q8pYRRIxcrSrmR4mMwutx0A"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\n\t\"email\":\"agavitalisogbonna@gmail.com\",\n\t\"password\":\"Chidiebere_94@\"\n}"
-				},
-				"description": ""
+				"url": {
+					"raw": "localhost:8000/api/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Get All Users",
 			"request": {
-				"url": "localhost:8000/api/users",
 				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDYwODkwNywiZXhwIjoxNjAwNjEyNTA3LCJuYmYiOjE2MDA2MDg5MDcsImp0aSI6IlFQcU1RbXJRRm9YaTBZZDAiLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xCeiWHk4Y6CI5REkQ3-9QZDfMtqOBUXdAgcFI-3gZMM",
-						"description": ""
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDYwODkwNywiZXhwIjoxNjAwNjEyNTA3LCJuYmYiOjE2MDA2MDg5MDcsImp0aSI6IlFQcU1RbXJRRm9YaTBZZDAiLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xCeiWHk4Y6CI5REkQ3-9QZDfMtqOBUXdAgcFI-3gZMM"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\n\t\"email\":\"agavitalisogbonna@gmail.com\",\n\t\"password\":\"Chidiebere_94@\"\n}"
-				},
-				"description": ""
+				"url": {
+					"raw": "localhost:8000/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Get A User By ID",
 			"request": {
-				"url": "localhost:8000/api/users/1",
 				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDYzNTYzNSwiZXhwIjoxNjAwNjM5MjM1LCJuYmYiOjE2MDA2MzU2MzUsImp0aSI6ImxpT0VuOGdNb2JSbjdpYW4iLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gt0W8A5VrK5av2n8vUr6Q8pYRRIxcrSrmR4mMwutx0A",
-						"description": ""
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYwMDYzNTYzNSwiZXhwIjoxNjAwNjM5MjM1LCJuYmYiOjE2MDA2MzU2MzUsImp0aSI6ImxpT0VuOGdNb2JSbjdpYW4iLCJzdWIiOjExLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gt0W8A5VrK5av2n8vUr6Q8pYRRIxcrSrmR4mMwutx0A"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\n\t\"email\":\"agavitalisogbonna@gmail.com\",\n\t\"password\":\"Chidiebere_94@\"\n}"
-				},
-				"description": ""
+				"url": {
+					"raw": "localhost:8000/api/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
 			},
 			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
