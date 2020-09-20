@@ -10,7 +10,7 @@ Authentication service with:
  4. Fetch user's data. 
 
 ## Documentation
-* This API Live documentation can be found here: [Click here to see API Documentation](https://documenter.getpostman.com/view/9706823/T1LLG8bS)
+* This API Live documentation can be found here: [Click here to see API Documentation](https://documenter.getpostman.com/view/2979665/TVKBZeEs)
 
 * You can also import the documetation file `documentation.json` at the root directory to your postman to have access to the endpoints locally.
 
