@@ -23,6 +23,7 @@ Enure you have the following installed and running on your system:
  1. PHP 7.2 and Above
  2. Composer 
  3. MySql Database System 
+ 4. PHPUnit
  
 ### Project Setop 
 Clone this project to your PC, Then from the terminal, navigate to the root of this project, then run
